@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Web Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="path/to/your/gameModules.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div class="hud">
+            <div class="crosshair"></div>
+            <div class="hotbar">
+                <div class="hotbar-item"></div>
+                <div class="hotbar-item"></div>
+                <div class="hotbar-item"></div>
+                <div class="hotbar-item"></div>
+                <div class="hotbar-item"></div>
+            </div>
+        </div>
+        <div class="debug-info">
+            <span id="fps">FPS: 60</span>
+            <span id="coords">Position: (0, 0, 0)</span>
+        </div>
+        <div id="pause-menu" class="menu hidden">
+            <h2>Paused</h2>
+            <button id="resume-btn">Resume</button>
+            <button id="quit-btn">Quit</button>
+        </div>
+        <div id="main-menu" class="menu">
+            <h1>Welcome to Minecraft Web</h1>
+            <button id="start-game-btn">Start Game</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
